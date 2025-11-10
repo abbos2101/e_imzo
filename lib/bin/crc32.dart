@@ -1,8 +1,7 @@
 class Crc32 {
   const Crc32._();
 
-  static const List<int> _bTable =
-  [
+  static const List<int> _bTable = [
     0,
     1996959894,
     3993919788,
@@ -264,8 +263,7 @@ class Crc32 {
   static String calcHex(String str) {
     var crc = -1;
     for (var i = 0, iTop = str.length; i < iTop; i += 2) {
-      crc =
-          ((crc & 0xFFFFFFFF) >> 8) ^
+      crc = ((crc & 0xFFFFFFFF) >> 8) ^
           _bTable[(crc ^ int.parse(str.substring(i, i + 2), radix: 16)) & 0xFF];
     }
     final r = ((crc ^ (-1)) & 0xFFFFFFFF) >> 0;

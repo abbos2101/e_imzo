@@ -1081,7 +1081,7 @@ class GOST28147Engine {
     sBoxes[sBoxName.toUpperCase()] = sBox;
   }
 
-  static _arraycopy(
+  static void _arraycopy(
     List<int> inp,
     int inOff,
     List<int> out,

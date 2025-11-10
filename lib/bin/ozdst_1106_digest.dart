@@ -18,7 +18,7 @@ class OzDSt1106Digest {
   final _cipher = GOST28147Engine();
   List<int> _sBox = [];
 
-  static _arraycopy(
+  static void _arraycopy(
     List<int> inp,
     int inOff,
     List<int> out,
