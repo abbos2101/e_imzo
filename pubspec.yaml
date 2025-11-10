@@ -3,7 +3,7 @@ description: "E-imzo bilan ishlash uchun package"
 version: 0.0.1
 repository: https://github.com/abbos2101/e_imzo
 homepage: https://www.linkedin.com/in/abbos2101/
-topics: [ e-imzo, imzo, soliq, one_id ]
+topics: [ e-imzo, imzo, soliq, one-id ]
 funding: [ https://github.com/sponsors/abbos2101 ]
 
 environment:
